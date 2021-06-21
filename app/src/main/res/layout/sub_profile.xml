@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    android:id="@+id/drawerLayout2"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFF3ED"
+    android:orientation="vertical"
+    tools:ignore="Deprecated">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <Button
+            android:id="@+id/privius_btn"
+            android:layout_width="40dp"
+            android:layout_height="20dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="10dp"
+            android:background="@drawable/jiji"></Button>
+
+        <ImageView
+            android:layout_width="140dp"
+            android:layout_height="80dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="80dp"
+            android:background="@drawable/hhj"></ImageView>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:layout_marginTop="50dp"
+            android:id="@+id/photo"
+            android:layout_width="180dp"
+            android:layout_height="145dp"
+            android:layout_marginLeft="110dp"
+            android:scaleType="fitXY"
+            />
+        <Button
+            android:id="@+id/photoChang_btn"
+            android:layout_width="60dp"
+            android:layout_height="40dp"
+            android:layout_gravity="bottom"
+            android:text="변경"
+            android:textSize="17dp"
+            android:textColor="#152543"
+            android:background="#C38E71"
+            android:layout_marginLeft="40dp"
+            />
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="130dp"
+        android:orientation="horizontal"
+        android:layout_marginTop="30dp">
+
+        <EditText
+            android:layout_marginTop="20dp"
+            android:id="@+id/nickname_view"
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="105dp"
+            android:text=" "
+            android:enabled="false"
+            android:maxLength="7"
+            android:textColor="#152543"
+            android:textSize="50dp"></EditText>
+        <Button
+            android:id="@+id/nameChang_btn"
+            android:layout_width="60dp"
+            android:layout_height="40dp"
+            android:layout_marginLeft="30dp"
+            android:text="변경"
+            android:textSize="17dp"
+            android:textColor="#152543"
+            android:background="#C38E71"/>
+
+
+
+    </LinearLayout>
+
+
+
+
+    <TextView
+        android:id="@+id/email_view"
+        android:layout_width="wrap_content"
+        android:layout_gravity="center"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:text=" "
+        android:textColor="#152543"
+        android:textSize="20dp"></TextView>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <TextView
+            android:id="@+id/gender_view"
+            android:layout_width="120dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="30dp"
+            android:layout_marginLeft="50dp"
+            android:text="성별제한"
+            android:textColor="#152543"
+            android:textSize="30dp"></TextView>
+        <Spinner
+            android:layout_marginLeft="30dp"
+            android:id="@+id/spinner"
+            android:layout_width="150dp"
+            android:layout_height="40dp"
+            android:layout_marginTop="30dp"
+            android:background="#C38E71"
+            >
+
+        </Spinner>
+    </LinearLayout>
+
+
+
+    <!--    <include layout="@layout/nick_name_change"/>-->
+
+
+</LinearLayout>

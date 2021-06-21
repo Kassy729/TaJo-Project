@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<androidx.drawerlayout.widget.DrawerLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_gravity="center"
+    tools:context=".Chatting"
+    android:id="@+id/ChattingRoomActivity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <LinearLayout
+            android:id="@+id/chattingRoomTop"
+            android:layout_width="fill_parent"
+            android:layout_height="100dp"
+            android:gravity="center"
+            android:orientation="vertical"
+            android:paddingLeft="64dp"
+            android:paddingTop="16dp"
+            android:paddingRight="64dp"
+            android:paddingBottom="16dp"
+            android:layout_alignParentTop="true"
+            tools:ignore="MissingConstraints"
+            tools:layout_editor_absoluteX="0dp">
+
+            <TextView
+                android:id="@+id/chattingRoomTitle"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:text="채팅 방"
+                android:textSize="30sp"
+                app:layout_constraintTop_toTopOf="@+id/linearLayout"
+                tools:layout_editor_absoluteX="-4dp" />
+
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/chattingRoomTop"
+            tools:ignore="MissingConstraints"
+            android:padding="10dp">
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/RoomList"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:scrollbarFadeDuration="0"
+                android:scrollbarSize="14dp"
+
+                />
+        </LinearLayout>
+
+
+
+    </RelativeLayout>
+
+
+
+
+
+
+
+<!--    <include layout = "@layout/activity_drawer"/>-->
+
+
+
+</androidx.drawerlayout.widget.DrawerLayout>

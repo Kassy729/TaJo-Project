@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:id="@+id/roomList"
+    android:layout_margin="20dp"
+    android:background="@drawable/room_list_back"
+    android:padding="5dp"
+    >
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        tools:ignore="MissingConstraints"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/roomTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="방제목 : z"
+            android:textColor="#000000"
+            android:textSize="20dp"
+            app:layout_constraintStart_toStartOf="parent" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+    <TextView
+        android:layout_marginTop="10dp"
+        android:id="@+id/roomTime"
+        android:layout_width="300px"
+        android:layout_height="50px"
+        android:text="만나는 시간"
+        android:textColor="#000000"
+        tools:layout_editor_absoluteY="0dp" />
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginTop="10dp">
+
+        <TextView
+            android:layout_width="300px"
+            android:layout_height="wrap_content"
+            android:text="성별 제한"
+            android:id="@+id/roomGender"
+            android:textColor="#000000"
+            tools:ignore="MissingConstraints" />
+
+        <TextView
+            android:id="@+id/roomLeftUser"
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:text="실시간 인원 :"
+            android:textColor="#000000"
+            app:layout_constraintStart_toEndOf="@+id/roomGender"
+            tools:ignore="MissingConstraints" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <TextView
+        android:id="@+id/roomPlace"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:text="출발지 "
+        android:textSize="16dp"
+        android:textColor="#000000" />
+
+
+</LinearLayout>

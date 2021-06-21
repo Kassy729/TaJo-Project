@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+
+
+
+
+    <androidx.drawerlayout.widget.DrawerLayout
+        android:id="@+id/drawer_layout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+
+            <fragment
+                android:id="@+id/map"
+                android:name="com.naver.maps.map.MapFragment"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                app:navermap_zoom="14"></fragment>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center|top"
+                android:orientation="horizontal">
+
+                <ImageButton
+                    android:id="@+id/menubutton"
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:background="@drawable/menu1"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="50dp" />
+
+                <ImageButton
+                    android:id="@+id/cahage_Button"
+                    android:background="@drawable/button1"
+                    android:layout_marginRight="10dp"
+                    android:layout_marginTop="24dp"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp">
+
+                </ImageButton>
+
+                <LinearLayout
+                    android:id="@+id/mLlinearLayout"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center|top"
+                    android:orientation="vertical">
+
+
+                    <EditText
+                        android:layout_marginTop="10dp"
+                        android:id="@+id/text"
+                        android:hint="출발지"
+                        android:gravity="center"
+                        android:textColor="@color/black"
+                        android:textColorHint="@color/black"
+                        android:layout_width="120dp"
+                        android:layout_height="30dp"
+                        android:background="#CCBCF4C4"
+                        />
+                    <TextView
+                        android:layout_marginTop="10dp"
+                        android:id="@+id/spinner"
+                        android:text="영진대학교"
+                        android:gravity="center"
+                        android:textSize="16dp"
+                        android:textColor="@color/black"
+                        android:background="#CCBCF4C4"
+                        android:layout_width="120dp"
+                        android:layout_height="30dp"/>
+
+
+
+
+                </LinearLayout>
+
+                <Button
+                    android:id="@+id/button"
+                    android:text="선택하기"
+                    android:layout_marginTop="20dp"
+                    android:layout_marginLeft="50dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+            </LinearLayout>
+            <ImageButton
+                android:layout_marginBottom="85dp"
+                android:id="@+id/myLocation"
+                android:background="@drawable/mylocation1"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_marginRight="10dp"
+                android:layout_gravity="center|right"/>
+
+
+
+            <Button
+                android:id="@+id/speed"
+                android:layout_width="105dp"
+                android:layout_height="105dp"
+                android:text="빨리찾기"
+                android:textColor="@color/black"
+                android:background="@drawable/buttonshape"
+                android:layout_marginLeft="-90dp"
+                android:layout_marginTop="170dp"
+                android:layout_gravity="center"/>
+            />
+            <Button
+                android:id="@+id/makeroom"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="방만들기"
+                android:textColor="@color/black"
+                android:background="@drawable/buttonshape"
+                android:layout_marginLeft="90dp"
+                android:layout_marginTop="170dp"
+                android:layout_gravity="center"/>
+            />
+        </FrameLayout>
+        <include layout="@layout/menubar"/>
+    </androidx.drawerlayout.widget.DrawerLayout>
+
+
+</LinearLayout>

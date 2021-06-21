@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    android:id="@+id/menu"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="240dp"
+    android:layout_height="match_parent"
+    android:layout_gravity="start"
+    android:background="#152543"
+    android:orientation="vertical">
+
+    <Button
+        android:id="@+id/close"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="메뉴 닫기"
+        android:layout_margin="10dp"
+        />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="140dp"
+        android:orientation="vertical">
+
+        <Button
+            android:id="@+id/profile_btn"
+            android:text="MY프로필"
+            android:layout_width="match_parent"
+            android:layout_height="90dp"
+            android:layout_marginBottom="20dp"/>
+
+        <Button
+            android:text="파티원 구하기"
+            android:layout_marginTop="100dp"
+            android:layout_width="match_parent"
+            android:layout_height="90dp"
+            android:id="@+id/roomSelect"/>
+
+
+
+
+
+    </LinearLayout>
+    <Button
+        android:text="로그아웃"
+        android:layout_marginTop="70dp"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:id="@+id/logout"/>
+
+
+
+</LinearLayout>

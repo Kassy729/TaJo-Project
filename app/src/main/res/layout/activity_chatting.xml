@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<androidx.drawerlayout.widget.DrawerLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_gravity="center"
+    tools:context=".Chatting"
+    android:id="@+id/ChattingActivity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+<!--        <Button-->
+<!--            android:id="@+id/Menu"-->
+<!--            android:layout_marginTop="20dp"-->
+<!--            android:layout_marginLeft="10dp"-->
+<!--            android:layout_width="wrap_content"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:text="메뉴"></Button>-->
+        <LinearLayout
+            android:id="@+id/Top"
+            android:layout_width="fill_parent"
+            android:layout_height="100dp"
+            android:gravity="center"
+            android:orientation="vertical"
+            android:paddingLeft="64dp"
+            android:paddingTop="16dp"
+            android:paddingRight="64dp"
+            android:paddingBottom="16dp"
+            android:layout_alignParentTop="true"
+            tools:ignore="MissingConstraints"
+            tools:layout_editor_absoluteX="0dp">
+
+            <TextView
+                android:id="@+id/textView_test"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:text="채팅하는곳"
+                android:textSize="30sp"
+                app:layout_constraintTop_toTopOf="@+id/linearLayout"
+                tools:layout_editor_absoluteX="-4dp" />
+
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginLeft="10dp"
+            android:layout_below="@id/Top"
+            android:layout_above="@id/Bottom"
+            tools:ignore="MissingConstraints">
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/chatting_test"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="#FFF3ED"
+                android:scrollbarFadeDuration="0"
+                android:scrollbarSize="5dp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/Bottom"
+            android:layout_width="fill_parent"
+            android:layout_height="70dp"
+
+            android:layout_alignParentBottom="true"
+            tools:ignore="MissingConstraints"
+            tools:layout_editor_absoluteX="0dp"
+            android:layout_marginRight="15dp"
+            android:layout_marginLeft="15dp">
+
+            <EditText
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:hint="메세지를 입력하세요"
+                android:id="@+id/message_edit_test"/>
+
+            <ImageButton
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_marginLeft="10dp"
+                android:textSize="15sp"
+                android:background="@drawable/camera"
+                android:id="@+id/imageButton"/>
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:text="보내기"
+                android:id="@+id/send_button_test"/>
+
+
+        </LinearLayout>
+
+    </RelativeLayout>
+
+
+
+
+
+
+
+    <include layout = "@layout/activity_drawer"/>
+
+
+
+</androidx.drawerlayout.widget.DrawerLayout>
